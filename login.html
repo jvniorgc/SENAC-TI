@@ -11,13 +11,18 @@
     <header class="header">
         <img class="header__logo" src="./assets/senac_logo.png">    
     </header>
-    <main>
-        <form class="form__login">
+    <main class="login__container">
+        <form action="post" class="form__login">
             <div class="form__login__div">
                 <label class="form__login__label" for="login">Matrícula</label>
-                <input type="number" id="login" class="form__login__input"> 
+                <input type="text" id="login" class="form__login__input"> 
             </div>
-            <input type="password" class="form__login__input"> 
+            <div class="form__login__div">
+                <label class="form__login__label" for="password">Senha</label>
+                <input type="password" id="password" class="form__login__input"> 
+            </div>
+            <button class="form__login__button" type="submit">Entrar</button>
+            <a href>Esqueci a senha</a>
         </form>
     </main>
     <footer></footer>
