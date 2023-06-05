@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Trocar senha</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -14,15 +14,22 @@
     <main class="login__container">
         <form action="post" class="form__login">
             <div class="form__login__div">
+                <label class="form__login__label" for="login">E-mail</label>
+                <input type="email" id="email" class="form__login__input"> 
+            </div>
+            <div class="form__login__div">
                 <label class="form__login__label" for="login">Matrícula</label>
                 <input type="text" id="login" class="form__login__input"> 
             </div>
             <div class="form__login__div">
-                <label class="form__login__label" for="password">Senha</label>
-                <input type="password" id="password" class="form__login__input"> 
+                <label class="form__login__label" for="password">Nova senha</label>
+                <input type="password" id="new-password" class="form__login__input"> 
             </div>
-            <button class="form__login__button" type="submit">Entrar</button>
-            <a href>Esqueci a senha</a>
+            <div class="form__login__div">
+                <label class="form__login__label" for="password">Confirmar senha</label>
+                <input type="password" id="new-password-check" class="form__login__input"> 
+            </div>
+            <button class="form__login__button" type="submit">Trocar senha</button>
         </form>
     </main>
 </body>
