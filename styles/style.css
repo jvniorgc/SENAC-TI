@@ -142,6 +142,80 @@ body {
     width: 60%;
 }
 
+.form__support {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5%;
+}
+
+.form__support__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form__support__inputs select, textarea {
+    width: 245px;
+}
+
+.form__support__inputs select {
+    border-radius: 20px;
+    padding: 4%;
+    font-size: 0.688rem;
+    font-weight: bold;
+}
+
+.form__support__inputs textarea {
+    height: 100px;
+    margin-bottom: 10%;
+}
+
+.form__support__modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content/Box */
+.form__support__modal__content {
+  background-color: #004A98;
+  color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  font-size: 1.63rem;
+  line-height: 40px;
+  padding: 3% 0;
+}
+
+/* The Close Button */
+.form__support__modal__close {
+  color: white;
+  background-color: transparent;
+  font-size: 1.3rem;
+  margin: 4%;
+  border: solid 1px white;
+  padding: 2% 10%;
+}
+
+.form__support__modal__close:hover,
+.form__support__modal__close:focus {
+  color: rgb(171, 171, 171);
+  
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media (max-width: 500px) {
     .selection__container {
         flex-direction: column;
